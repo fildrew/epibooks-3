@@ -27,7 +27,7 @@ class BookList extends Component {
         </Form.Group>
 
         <Row className="justify-content-center mt-5 g-2">
-            <Col xs={12} md={6} className= "col-8 text-center">
+            <Col xs={6} md={8} className= "col-8 text-center">
                 <Row className="justify-content-center">
                     {this.props.books
                       .filter((b) =>
@@ -40,7 +40,7 @@ class BookList extends Component {
                       ))}
                 </Row>
             </Col>
-          <Col xs={12} md={6} className="col-4 text-center sticky-top mt-5 h-50">
+          <Col xs={6} md={4} className="col-4 text-center sticky-top mt-5 h-50">
             <CommentArea asin={this.state.bookId}/>
           </Col>
         </Row>
